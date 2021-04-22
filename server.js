@@ -1,32 +1,33 @@
 const express = require("express");
 const app = express();
 const cfenv = require("cfenv");
-
+//const leaflet = require("leaflet")
 const bodyParser = require('body-parser')
-const expressSession = require('express-session')({
+/*const expressSession = require('express-session')({
     secret: 'secret',
     resave: false,
     saveUninitialized: false
-});
-const helmet = require("helmet");
-const passport = require('passport');
+});*/
+//const helmet = require("helmet");
+//const passport = require('passport');
 
 //mongoose setup
-const mongoConnect = require("./mongo-connect")
+//const mongoConnect = require("./mongo-connect")
 
 //provides basic security for HTTP headers
-app.use(helmet());
+//app.use(helmet());
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }))
+//app.use(bodyParser.urlencoded({ extended: true }))
 
 // parse application/json
-app.use(bodyParser.json())
+//app.use(bodyParser.json())
 
-app.use(expressSession);
+//app.use(expressSession);
+/*
 app.use(passport.initialize());
 app.use(passport.session());
-
+*/
 /*
 app.post("/api/visitors", function (request, response) {
   var userName = request.body.name;
